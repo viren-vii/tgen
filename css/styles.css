@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+}
+
+.buttonsMain {
+    display: block;
+    margin: 20px auto;
+    clear: both;
+}
+
+#data {
+    display: none;
+    margin: 2% auto;
+    padding: 1%;
+    text-align: left;
+    background-color: grey;
+    width: 50%;
+}
+
+#close {
+    visibility: hidden;
+    background: red;
+    border-radius: 50%;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    padding: 0.5%;
+    float: left;
+}
+
+.formSelector {
+    display: none;
+    margin: 20px auto;
+    clear: both;
+}
