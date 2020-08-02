@@ -103,6 +103,7 @@ function closeData() {
     hideClose();
     clearFormIp();
     clearTableIp();
+    $("#dialog").dialog("close");
     $("#data").css('display', 'none');
     data.style.display = "none";
     $("#formIp").remove();
