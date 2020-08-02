@@ -176,3 +176,8 @@ lable {
         font-size: 100%;
     }
 }
+
+.ui-widget-content {
+    border: 1px solid #dddddd;
+    color: black;
+}
