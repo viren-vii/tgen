@@ -11,6 +11,7 @@ function dynAlert(x) {
         closeText: "X",
         autoOpen: false,
         appendTo: "body",
+        resizable: false,
         show: {
             effect: "blind",
             duration: 1000
