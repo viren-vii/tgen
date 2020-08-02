@@ -1,2 +1,2 @@
 # tgen
-Non styled HTML table code generator
+Non styled HTML code generator

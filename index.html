@@ -6,21 +6,35 @@
     <meta charset="utf-8">
     <title>HTML generator</title>
     <meta name="description" content="HTML generator">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Viren-vii">
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
+
+    <!--<button id="opener">Open Dialog</button> -->
     <button type="button" id="close" onclick="closeData()">X</button>
     <button type="button" id="starterHTML" class="buttonsMain" onclick="starterHTML()">Starter HTML</button>
     <button type="button" id="createForm" class="buttonsMain" onclick="createForm()">Create Form</button>
-    <input type="number" id="formIp" class="formSelector" />
-    <input type="submit" id="formSub" onclick="getVal()" class="formSelector" />
+    <button type="button" id="createTable" class="buttonsMain" onclick="createTable()">Create Table</button>
+    <button type="button" id="feedback" class="buttonsMain" onclick="location.href = 'mailto:virubhosale112@gmail.com'">Give me feedback!</button>
+    <button type="button" id="codeLookUp" class="buttonsMain" onclick="location.href = 'https://github.com/viren-vii/tgen'">Want to see code?</button>
+
+    <!-- <input type="number" id="formIp" class="formSelector" />
+    <input type="submit" id="formSub" onclick="getVal()" class="formSelector" /> -->
 
 
     <div id="data" onclick="copy()"></div>
+    <div id="dialog" title="Hey!">
+        <p></p>
+    </div>
     <script src="js/scripts.js "></script>
     <!-- <script type="module" src="js/form.js "></script> -->
 

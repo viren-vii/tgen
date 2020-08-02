@@ -1,5 +1,53 @@
+@font-face {
+    font-family: 'Bitwise';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bitwise'), url('./bitwise.woff') format('woff');
+}
+
 body {
     text-align: center;
+    background-color: black;
+    font-family: 'Bitwise';
+}
+
+button {
+    font-family: 'Bitwise';
+    font-size: 250%;
+    display: block;
+    background-color: #20C20E;
+    color: black;
+    border-radius: 70px;
+    border: 3px solid black;
+    /* border-radius: 4px; */
+    width: 40%;
+    padding: 2%;
+}
+
+#close {
+    visibility: hidden;
+    width: auto;
+    font-size: 100%;
+    background: #20C20E;
+    border-radius: 50%;
+    color: black;
+    font-weight: bolder;
+    border: 2px solid black;
+    padding: 0.5%;
+    float: left;
+}
+
+#close:hover {
+    color: #20C20E;
+    background: black;
+    border: 2px solid #20C20E;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: #20C20E;
+    border: 3px solid #20C20E;
 }
 
 .buttonsMain {
@@ -13,23 +61,118 @@ body {
     margin: 2% auto;
     padding: 1%;
     text-align: left;
-    background-color: grey;
+    background-color: black;
     width: 50%;
+    border-radius: 10px;
+    border: 3px solid #20C20E;
+    color: #20C20E;
 }
 
-#close {
-    visibility: hidden;
-    background: red;
-    border-radius: 50%;
-    color: white;
-    font-weight: bolder;
-    border: none;
-    padding: 0.5%;
-    float: left;
+#data:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #20C20E;
 }
 
 .formSelector {
-    display: none;
+    display: block;
     margin: 20px auto;
     clear: both;
+}
+
+.tableSelector {
+    display: block;
+    margin: 10px auto;
+    clear: both;
+    text-align: center;
+}
+
+input {
+    font-family: 'Bitwise';
+    font-size: 250%;
+    display: block;
+    background-color: #20C20E;
+    color: black;
+    border-radius: 70px;
+    border: 3px solid black;
+    /* border-radius: 4px; */
+    width: 40%;
+    padding: 2%;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+lable {
+    color: #20C20E;
+    font-size: 200%;
+}
+
+#dialog {
+    visibility: hidden;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 0 0 20px 20px;
+}
+
+.ui-dialog button {
+    float: right;
+    width: auto;
+    height: auto;
+    font-size: 60%;
+}
+
+#dialog p {
+    clear: both;
+    padding: 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: 150%;
+    ;
+}
+
+.ui-dialog-titlebar {
+    background: #20C20E;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    font-size: 250%;
+    border-radius: 20px 20px 0 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+    .left,
+    .main,
+    .right {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    body {
+        font-size: 100%;
+    }
+    button {
+        font-size: 100%;
+    }
+    #data {
+        width: 80%;
+    }
+    lable {
+        font-size: 100%;
+    }
+    input {
+        font-size: 100%;
+    }
 }
