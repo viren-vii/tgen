@@ -177,7 +177,17 @@ lable {
     }
 }
 
+.ui-dialog {
+    font-family: Bitwise;
+    background-color: transparent;
+    border: none;
+}
+
 .ui-widget-content {
     border: 1px solid #dddddd;
     color: black;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
 }
